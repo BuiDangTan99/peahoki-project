@@ -1,0 +1,29 @@
+.hide {
+  display: none;
+}
+.preferences {
+  margin: 20px 0px;
+  display: flex;
+  .preference {
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}
+.preferences-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.cus-label {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+input[type="radio"]:checked + .cus-label {
+  border-color: blue;
+  display: inline-block;
+}

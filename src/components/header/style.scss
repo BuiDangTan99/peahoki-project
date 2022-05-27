@@ -1,0 +1,32 @@
+@import '../../assets/css/varibles';
+.header{
+    height: 50px;
+    width: 100%;
+    background-color: $background-dark;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    &__item{
+        list-style: none;
+        display: block;
+        height: 100%;
+        line-height: 50px;
+    }
+   
+    .menu-link{
+        text-decoration: none;
+        color: $text-color-light;
+        height: 100%;
+        display: inline-block;
+        padding: 0 20px;
+    } 
+    .is-active{
+        background-color: blue;
+        .menu-link{
+            color: white;
+        }
+    }
+}
